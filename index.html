@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Offcanvas</title>
+</head>
+<body>
+    <button onclick="fnOpen()" style="cursor: pointer;     color: #fff;
+    background-color: rgb(8, 91, 132); width: 200px; height: 50px; font-size: 20px; border: none; border-radius: 10px;">open offcanvas</button>
+    <div class="offcanvas">
+        <div class="offcanvas__header">
+            <h2>Offcanvas</h2>
+            <button onclick="fnClose()" class="close">X</button>
+        </div>
+        <div class="offcanvas__body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolor veritatis explicabo, soluta totam facilis et tempora optio delectus, illo voluptatem eum architecto quasi ducimus quidem velit maxime obcaecati? Nam!</p>
+        </div>
+        <div class="offcanvas__footer">
+            <button onclick="fnClose()">close</button>
+        </div>
+    </div>
+    <div onclick="fnClose()" class="offcanvas__shadow"></div>
+</body>
+<script src="./js/main.js"></script>
+</html>
